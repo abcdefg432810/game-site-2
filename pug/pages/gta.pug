@@ -1,0 +1,89 @@
+extends ../layouts/pages-layout 
+
+block title 
+    - var title ="ГТА 5"
+
+block content    
+    header  
+        .gta-box 
+            .container-xl.p-0 
+                .conteainer 
+                    .row 
+                        .col-xxl-6.col-xl-6.col-lg-6.col-md-12 
+                            .hero-section.pt-5 
+                                h1.hero-title.text-white.m-0 GTA 5
+                                p.hero-desc.text-white.my-5 
+                                    | Grand Theft Auto 5 — легендарное продолжение
+                                    br
+                                    | популярной серии Grand Theft Auto. Местом действия
+                                    br 
+                                    | стал город Лос-Сантос, полюбившийся ещё в GTA: San
+                                    br
+                                    | Andreas.
+                                p.hero-desc.text-white 
+                                    | Впервые игра расскажет историю сразу трех
+                                    br 
+                                    | персонажей: Майкла, Тревора и Франклина, между
+                                    br
+                                    | которыми вы сможете переключаться в любое время.
+                                    br 
+            .img-mobile     
+                img(src="./img/pic/gta-big.png" alt="") 
+    main 
+        section.gallery.pt-5 
+            .container-xl.p-0 
+                .container 
+                    h1.gallery-title Галерея
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                img(src="./img/pic/slider/gta-slide-1.png" alt="")
+                            .swiper-slide 
+                                img(src="./img/pic/slider/gta-slide-2.png" alt="")
+                        .swiper-button-next 
+                        .swiper-button-prev  
+        section.articles.py-5 
+            .container-xl.p-0 
+                .container 
+                    h1.gallery-title Статьи
+                    .row 
+                        .col-md-4 
+                            .card 
+                                .card-body 
+                                    img.card-img-top.mb-4(src="./img/pic/articles/gta-article-1.png" alt="...")
+                                    h5.card-title Реалистичная графика
+                                    p.card-text 
+                                        | NaturalVision Evolved. Это незавершенный
+                                        br
+                                        | визуальный мод, который в настоящее
+                                        br
+                                        | время находится на стадии раннего
+                                        br
+                                        | доступа.
+                                    a.btn.btn-primary(href="#") Читать
+                        .col-md-4 
+                            .card 
+                                .card-body 
+                                    img.card-img-top.mb-4(src="./img/pic/articles/gta-article-2.png" alt="...")
+                                    h5.card-title
+                                        | Сохранение —
+                                        br
+                                        | 100% прохождение
+                                    p.card-text 
+                                        | Сохранение сделано на последней версии
+                                        br
+                                        | игры и все пройдено.
+                                    a.btn.btn-primary(href="#") Читать
+                        .col-md-4 
+                            .card 
+                                .card-body 
+                                    img.card-img-top.mb-4(src="./img/pic/articles/gta-article-3.png" alt="...")
+                                    h5.card-title 
+                                        | Новый электропикап
+                                        br
+                                        | Tesla Cybertruck
+                                    p.card-text 
+                                        | Новый электропикап Tesla Cybertruck
+                                        br
+                                        | появится в GTA V
+                                    a.btn.btn-primary(href="#") Читать                                                                                  
